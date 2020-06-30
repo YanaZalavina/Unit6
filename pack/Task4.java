@@ -47,7 +47,7 @@ public class Task4 {
 				 maxi=maxElementInRow[i];
 			 }
 			 if(i==maxElementInRow.length-1) {
-					System.out.println("Максимальное значение в матрице: "+maxi);
+					System.out.println("ГЊГ ГЄГ±ГЁГ¬Г Г«ГјГ­Г®ГҐ Г§Г­Г Г·ГҐГ­ГЁГҐ Гў Г¬Г ГІГ°ГЁГ¶ГҐ: "+maxi);
 			 }
 		 }
 		
@@ -58,15 +58,15 @@ public class Task4 {
 				System.out.println();
 		 }
 		 
-		 System.out.println("Суммы отрицательных чисел для каждой строки: ");
+		 System.out.println("Г‘ГіГ¬Г¬Г» Г®ГІГ°ГЁГ¶Г ГІГҐГ«ГјГ­Г»Гµ Г·ГЁГ±ГҐГ« Г¤Г«Гї ГЄГ Г¦Г¤Г®Г© Г±ГІГ°Г®ГЄГЁ: ");
 	     for(int i=0;i<negativeSumm.length;i++) {
 			 System.out.print(negativeSumm[i]+" ");
 
 	     }   
 
-		System.out.println("Минимальное значение в матрице: "+min);
+		System.out.println("ГЊГЁГ­ГЁГ¬Г Г«ГјГ­Г®ГҐ Г§Г­Г Г·ГҐГ­ГЁГҐ Гў Г¬Г ГІГ°ГЁГ¶ГҐ: "+min);
 		
-		 System.out.println("Максимальные значения в каждой из строк: ");
+		 System.out.println("ГЊГ ГЄГ±ГЁГ¬Г Г«ГјГ­Г»ГҐ Г§Г­Г Г·ГҐГ­ГЁГї Гў ГЄГ Г¦Г¤Г®Г© ГЁГ§ Г±ГІГ°Г®ГЄ: ");
 	     for(int i=0;i<negativeSumm.length;i++) {
 			 System.out.print(maxElementInRow[i]+" ");
 	     }
@@ -87,7 +87,7 @@ public class Task4 {
 	     mass[rowNumMin][colNumMin]=maxi;
 	     mass[rowNumMax][colNumMax]=min;
 		
-	     System.out.println("Матрица после перемещения минимального и максимального значений:");
+	     System.out.println("ГЊГ ГІГ°ГЁГ¶Г  ГЇГ®Г±Г«ГҐ ГЇГҐГ°ГҐГ¬ГҐГ№ГҐГ­ГЁГї Г¬ГЁГ­ГЁГ¬Г Г«ГјГ­Г®ГЈГ® ГЁ Г¬Г ГЄГ±ГЁГ¬Г Г«ГјГ­Г®ГЈГ® Г§Г­Г Г·ГҐГ­ГЁГ©:");
 		 for(int[] i: mass) {
 			 for(int j: i) {
 					System.out.print(j+" ");
@@ -99,7 +99,7 @@ public class Task4 {
 	public static Integer getSize() {
 		int n=0;
 		Scanner sc = new Scanner(System.in); 
-        System.out.println("Введите натуральное число для задания размера матрицы");
+        System.out.println("Г‚ГўГҐГ¤ГЁГІГҐ Г­Г ГІГіГ°Г Г«ГјГ­Г®ГҐ Г·ГЁГ±Г«Г® Г¤Г«Гї Г§Г Г¤Г Г­ГЁГї Г°Г Г§Г¬ГҐГ°Г  Г¬Г ГІГ°ГЁГ¶Г»");
 		if (sc.hasNext()) { 
 			n=sc.nextInt();
 			}
@@ -113,7 +113,7 @@ public class Task4 {
 		int row[]=new int[m];
 		Scanner sc = new Scanner(System.in); 
 		for(int i=0;i<m;i++) {
-			System.out.println("Введите натуральне число для строки матрицы");
+			System.out.println("Г‚ГўГҐГ¤ГЁГІГҐ Г­Г ГІГіГ°Г Г«ГјГ­ГҐ Г·ГЁГ±Г«Г® Г¤Г«Гї Г±ГІГ°Г®ГЄГЁ Г¬Г ГІГ°ГЁГ¶Г»");
 			if (sc.hasNext()) { 
 				row[i]=sc.nextInt();
 				}
@@ -121,4 +121,4 @@ public class Task4 {
 		return row;
 	}
 }
-
+// Р’РѕС‚ РІ Р·Р°РґР°С‡Р°С… СЌС‚РѕРіРѕ РјРѕРґСѓР»СЏ РјРѕР»РѕРґРµС†. Р’СЃРµ СЂРµС€РµРЅРѕ РєРѕСЂСЂРµРєС‚РЅРѕ. РњРѕР»РѕРґРµС†, Р·Р°С‡С‚РµРЅРѕ
